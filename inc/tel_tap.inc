@@ -1,0 +1,1 @@
+<a href="tel:<?php include("inc/tel.inc"); ?>" class="tel-link" onclick="gtag('event','tel-tap',{'event_category': 'click','event_label': 'label'});"><?php include("inc/tel.inc"); ?></a>

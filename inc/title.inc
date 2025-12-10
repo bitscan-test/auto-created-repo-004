@@ -1,0 +1,1 @@
+<?php include("inc/area.inc"); ?>の<?php include("inc/subject.inc"); ?>なら、<?php include("inc/clinic_name.inc"); ?>

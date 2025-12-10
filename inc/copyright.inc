@@ -1,0 +1,1 @@
+Copyright 20XX <?php include("inc/clinic_name.inc"); ?>.

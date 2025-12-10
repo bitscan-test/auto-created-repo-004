@@ -1,0 +1,1 @@
+<?php include("inc/area.inc"); ?>メタタグ入ります<?php include("inc/clinic_name.inc"); ?>。メタタグ入ります

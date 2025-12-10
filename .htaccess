@@ -1,0 +1,26 @@
+#### html上でのPHP起動 ####
+# heteml版の場合：※7.4以下には
+AddType application/x-httpd-php .html
+# lolipop版の場合：
+AddType application/x-httpd-lsphp .html
+
+##### rewrite setteing #####
+RewriteEngine On
+Options +FollowSymLinks
+RewriteBase /
+
+##### httpsに統一 #####
+#RewriteCond %{HTTPS} off
+#RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+##### wwwありに統一 #####
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+##### wwwなしに統一（※wwwありなしは上記とどちらか1つのみ記述） #####
+##RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+##RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [R=301,L]
+
+#### index.html 無に統一 ####
+#RewriteCond %{THE_REQUEST} ^.*/index.html
+#RewriteRule ^(.*)index.html$ https://www.●●●.com/$1 [R=301,L]

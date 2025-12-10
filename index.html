@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=0">
+	<meta name="description" content="<?php include("inc/description.inc"); ?>">
+	<meta name="keywords" content="<?php include("inc/keywords.inc"); ?>">
+
+	<title><?php include("inc/title.inc"); ?></title>
+
+	<link rel="stylesheet" href="css/import.css" media="all">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicon/manifest.json">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/jquery.backstretch.min.js"></script>
+	<script src="js/common.js" type="text/javascript"></script>
+	<script src="js/wow.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?zRicjqTQ7cc%3D&box=QmMO2XLx56U%3D&aa=1&ab=2" charset="utf-8"></script>
+
+	<?php include("inc/t_code.inc"); ?>
+
+	<script>
+		$(function () {
+			$("#main-visual").backstretch([
+				"img/main-visual.jpg",
+				"img/main-visual.jpg",
+				"img/main-visual.jpg",
+				"img/main-visual.jpg"
+			], { duration: 4000, fade: 1500 });
+		});
+	</script>
+
+	<script>
+		$(function () {
+			$("#main-visual-sp").backstretch([
+				"img/sp/main-visual.jpg",
+				"img/sp/main-visual.jpg",
+				"img/sp/main-visual.jpg",
+				"img/sp/main-visual.jpg"
+			], { duration: 4000, fade: 1500 });
+		});
+	</script>
+
+</head>
+
+<body id="home">
+
+	<div id="spNavArea">
+		<div class="inner">
+			<div class="navBtn"><span></span><span></span><span></span></div>
+			<?php include("inc/s_navi.inc"); ?>
+		</div>
+	</div>
+
+	<div id="wrapper">
+
+		<h1><span class="inner"><?php include("inc/title.inc"); ?></span></h1>
+
+		<?php include("inc/header.inc"); ?>
+
+		<div id="main-visual" class="pc">
+			<!--div class="logo"><img src="img/logo.png" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>"/></div-->
+			<div class="catch"><img src="img/catch.png" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>" /></div>
+		</div>
+
+		<div id="main-visual-sp" class="sp">
+			<div class="catch"><img src="img/catch.png" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>" /></div>
+		</div>
+
+		<?php include("inc/navi.inc"); ?>
+
+
+		<div id="information">
+
+			<div id="index-top" class="inner clearfix">
+				<div class="info clearfix wow fadeIn">
+					<div class="logo2">
+						<a href="./"><img src="img/logo2.png" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>" /></a>
+					</div>
+					<div class="contact">
+						<div class="index-time">
+							<h3>Time<span>診療時間</span></h3>
+							<?php include("inc/time.inc"); ?>
+						</div>
+						<div class="address">
+							<h3>Contact<span>ご予約はこちらから</span></h3>
+							<p><?php include("inc/postal.inc"); ?>　<?php include("inc/address.inc"); ?></p>
+							<div class="tel"><?php include("inc/tel_tap.inc"); ?></div>
+							<div class="web"><a href="#" target="_brank" class="btn-a"><span>WEB予約はこちら</span></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="info" class="content view_timer" data-end-date="2030/1/1 0:00">
+				<div class="inner clearfix">
+					<div class="box first view_timer" data-end-date="2030/1/1 0:00">
+						<h3>開院のお知らせ</h3>
+						<strong>20XX年XX月XX日(●)新規開院</strong>
+						<p>●●駅エリアに新規開院する<?php include("inc/clinic_name.inc"); ?>です。<br>
+							むし歯・歯周病はもちろん、インプラントや矯正などの専門的な治療もお任せください。どうぞ宜しくお願いいたします。</p>
+					</div>
+					<div class="box view_timer" data-end-date="2030/1/1 0:00">
+						<h3>内覧会のお知らせ</h3>
+						<p>開院に先がけて院内を見学いただける内覧会を開催いたします。ご予約不要ですのでお気軽にお越しください。<br>
+							<br>
+							<em>XX月XX日(●)…00:00～00:00<br>
+								XX月XX日(●)…00:00～00:00<br>
+								XX月XX日(●)…00:00～00:00</em></p>
+					</div>
+				</div>
+			</section>
+
+			<div id="index-top" class="clearfix">
+
+				<div class="inner">
+
+					<div class="fleft">
+						<div class="logo">
+							<a href="./"><img src="img/logo.png" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>" /></a>
+						</div>
+						<div class="news-container wow fadeIn">
+							<h2>News<span>お知らせ</span></h2>
+							<div class="news-body">
+								<ul>
+									<li>
+										<span class="date">20XX.XX.XX(●) </span>
+										<span class="title">[ タイトルが入ります。タイトルが入ります。タイトルが入ります。 ]<br>
+											本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</span>
+									</li>
+									<li>
+										<span class="date">20XX.XX.XX(●) </span>
+										<span class="title">[ タイトルが入ります。タイトルが入ります。タイトルが入ります。 ]<br>
+											本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</span>
+									</li>
+									<li>
+										<span class="date">20XX.XX.XX(●) </span>
+										<span class="title">[ タイトルが入ります。タイトルが入ります。タイトルが入ります。 ]<br>
+											本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</span>
+									</li>
+									<li>
+										<span class="date">20XX.XX.XX(●) </span>
+										<span class="title">[ タイトルが入ります。タイトルが入ります。タイトルが入ります。 ]<br>
+											本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- #index-top -->
+
+
+			<div id="index-yoyaku" class="inner wow fadeIn">
+				<h2>待ち時間の軽減のため、予約優先で診療を行っております</h2>
+				<div class="clearfix">
+					<div class="yoyaku-box-left wow fadeInUp">
+						<div class="btn">
+							<a href="tel:<?php include("inc/tel.inc"); ?>" class="btn-a">
+								<h3>電話予約</h3>
+								<div class="yoyaku-contact-tel"><?php include("inc/tel.inc"); ?></div>
+							</a>
+						</div>
+					</div>
+					<div class="yoyaku-box-right wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+						<div class="btn">
+							<a href="" target="_blank" class="btn-a">
+								<h3>インターネット予約(24時間受付)</h3>
+								<div class="qr">
+									<p>QRコードを読み込むか、クリックをしてください。</p>
+									<img src="img/qrcode.gif" alt="QRコード">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div><!-- #index-yoyaku -->
+
+		</div>
+
+
+		<section id="greeting" class="content">
+			<div class="inner">
+				<h2 class="wow fadeIn">Greeting<span>ごあいさつ</span></h2>
+				<div class="clearfix wow fadeInUp">
+					<div class="img">
+						<img src="img/img01.jpg" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>" />
+						<div class="name">院長　●●　●●(ふり　がな)</div>
+					</div>
+					<div class="box">
+						<h3><strong>テキストテキストテキストテキストテキストテキストテキストテキスト</strong></h3>
+						<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+						<div class="frame">
+							<h4><span>●</span>院長略歴</h4>
+							<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+						</div>
+
+						<div class="btn"><a href="staff.html" class="btn-a"><span>詳しくはこちら</span></a></div>
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<div id="index-content">
+			<div class="content-header wow fadeIn">
+				<h2>Point<span>当院の特徴</span></h2>
+			</div>
+
+			<article class="inner clearfix wow fadeInUp">
+				<figure><img src="img/01.png" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>・01" /><img src="img/index-img01.jpg" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>" /></figure>
+				<h3><strong>テキストテキストテキストテキスト<br>テキストテキストテキストテキスト</strong></h3>
+				<p>
+					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+				</p>
+			</article>
+
+			<article class="left inner clearfix wow fadeInUp">
+				<figure><img src="img/02.png" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>・02" /><img src="img/index-img02.jpg" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>" /></figure>
+				<h3><strong>テキストテキストテキストテキスト<br>テキストテキストテキストテキスト</strong></h3>
+				<p>
+					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+				</p>
+			</article>
+
+			<article class="inner clearfix wow fadeInUp">
+				<figure><img src="img/03.png" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>・03" /><img src="img/index-img03.jpg" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>" /></figure>
+				<h3><strong>テキストテキストテキストテキスト<br>テキストテキストテキストテキスト</strong></h3>
+				<p>
+					テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+				</p>
+			</article>
+
+		</div>
+
+
+		<section id="facility" class="content">
+			<div class="inner">
+				<h2 class="wow fadeIn">Clinic<span>院内・設備紹介</span></h2>
+				<div class="box wow fadeInUp">
+					<ol>
+						<li>
+							<div class="img">
+								<span>1</span>
+								<img src="img/img02.jpg" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>" />
+							</div>
+							<div class="txt">
+								<h3><span>1</span>テキストテキスト</h3>
+								<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							</div>
+						</li>
+						<li>
+							<div class="img">
+								<span>2</span>
+								<img src="img/img03.jpg" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>" />
+							</div>
+							<div class="txt">
+								<h3><span>2</span>テキストテキスト</h3>
+								<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							</div>
+						</li>
+						<li>
+							<div class="img">
+								<span>3</span>
+								<img src="img/img04.jpg" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>" />
+							</div>
+							<div class="txt">
+								<h3><span>3</span>テキストテキスト</h3>
+								<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							</div>
+						</li>
+						<li>
+							<div class="img">
+								<span>4</span>
+								<img src="img/img05.jpg" alt="<?php include("inc/area.inc"); ?>・<?php include("inc/clinic_name.inc"); ?>" />
+							</div>
+							<div class="txt">
+								<h3><span>4</span>テキストテキスト</h3>
+								<p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+							</div>
+						</li>
+					</ol>
+					<div class="btn"><a href="clinic.html" class="btn-a"><span>詳しくはこちら</span></a></div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="onayami" class="content">
+			<div class="inner">
+				<h2 class="wow fadeIn">Service<span>診療メニュー</span></h2>
+				<ul class="onayami-container">
+					<li class="onayami-box01 wow fadeInUp" data-wow-delay="0.1s">
+						<a href="service.html#s01">テキストテキスト</a>
+					</li>
+					<li class="onayami-box02 wow fadeInUp" data-wow-delay="0.2s">
+						<a href="service.html#s02">テキストテキスト</a>
+					</li>
+					<li class="onayami-box03 wow fadeInUp" data-wow-delay="0.3s">
+						<a href="service.html#s03">テキストテキスト</a>
+					</li>
+					<li class="onayami-box04 wow fadeInUp" data-wow-delay="0.4s">
+						<a href="service.html#s04">テキストテキスト</a>
+					</li>
+					<li class="onayami-box05 wow fadeInUp" data-wow-delay="0.5s">
+						<a href="service.html#s05">テキストテキスト</a>
+					</li>
+					<li class="onayami-box06 wow fadeInUp" data-wow-delay="0.6s">
+						<a href="service.html#s06">テキストテキスト</a>
+					</li>
+					<li class="onayami-box07 wow fadeInUp" data-wow-delay="0.7s">
+						<a href="service.html#s07">テキストテキスト</a>
+					</li>
+					<li class="onayami-box08 wow fadeInUp" data-wow-delay="0.8s">
+						<a href="service.html#s08">テキストテキスト</a>
+					</li>
+					<li class="onayami-box09 wow fadeInUp" data-wow-delay="0.9s">
+						<a href="service.html#s09">テキストテキスト</a>
+					</li>
+					<li class="onayami-box10 wow fadeInUp" data-wow-delay="1.0s">
+						<a href="service.html#s10">テキストテキスト</a>
+					</li>
+				</ul>
+
+				<table>
+					<tr>
+						<th>医院名</th>
+						<td><?php include("inc/clinic_name.inc"); ?></td>
+					</tr>
+					<tr>
+						<th>所在地</th>
+						<td><?php include("inc/postal.inc"); ?>　<?php include("inc/address.inc"); ?></td>
+					</tr>
+					<tr>
+						<th>電話番号</th>
+						<td><?php include("inc/tel_tap.inc"); ?></td>
+					</tr>
+					<tr>
+						<th>URL</th>
+						<td>https://www.<?php include("inc/domain.inc"); ?>/</td>
+					</tr>
+					<tr>
+						<th>業務内容</th>
+						<td>歯科</td>
+					</tr>
+					<tr>
+						<th>説明</th>
+						<td>土日診療・女性歯科医師在籍・東新宿駅から徒歩5分の【<?php include("inc/clinic_name.inc"); ?>】です。重度の歯周病治療・インプラントといった高度な治療もお任せください。CT・マイクロスコープを使用した精密な歯科治療を行います。</td>
+					</tr>
+				</table>
+
+			</div>
+		</section>
+
+
+		<?php include("inc/footer.inc"); ?>
+
+	</div><!-- #wrapper -->
+	<script src="js/spnav.js"></script>
+</body>
+
+</html>

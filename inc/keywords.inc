@@ -1,0 +1,1 @@
+<?php include("inc/area.inc"); ?>,<?php include("inc/subject_key.inc"); ?>,<?php include("inc/clinic_name.inc"); ?>

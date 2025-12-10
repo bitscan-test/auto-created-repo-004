@@ -1,1 +1,3 @@
-# Initial commit
+# 初期コミット
+
+This repo was initialized via API.
